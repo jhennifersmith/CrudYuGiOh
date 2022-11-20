@@ -39,7 +39,7 @@ CREATE TABLE [dbo].[Armadilha]
     [IdArmadilha] INT NOT NULL PRIMARY KEY IDENTITY(1,1),
     [Descricao] VARCHAR(255) NOT NULL,
     [IdTipoCarta] INT NOT NULL,
-    [CONSTRAINT] FKCARTAIDCARTA FOREIGN KEY(CartaIdCarta)  REFERENCES TipoCarta(IdTipoCarta)
+    [CONSTRAINT] FKCARTAIDCARTA FOREIGN KEY(IdTipoCarta) REFERENCES TipoCarta(IdTipoCarta)
 );
 
 CREATE TABLE  [dbo].[Magias]
