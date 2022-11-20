@@ -67,6 +67,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\YuGiOhBD.mdf" />
+    <Content Include="App_Data\YuGiOhBD_log.ldf">
+      <DependentUpon>YuGiOhBD.mdf</DependentUpon>
+    </Content>
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
