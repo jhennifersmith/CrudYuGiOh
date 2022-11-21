@@ -71,7 +71,7 @@ CREATE TABLE [dbo].[MonstroPendulo]
     [IdMonstroPendulo] INT NOT NULL PRIMARY KEY IDENTITY(1,1),
     [Descricao] VARCHAR(255) not null,
     [IdMonstroEfeito] int not null, 
-    CONSTRAINT [FK_MonstroPendulo_ToTable] FOREIGN KEY (IdMonstroEfeito) REFERENCES TipoMonstroEfeito(IdMonstroEfeito)
+    CONSTRAINT [FK_MonstroPendulo_MonstroEfeito] FOREIGN KEY (IdMonstroEfeito) REFERENCES TipoMonstroEfeito(IdMonstroEfeito)
 
 );
 
