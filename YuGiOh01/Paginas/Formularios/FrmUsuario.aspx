@@ -23,9 +23,19 @@
                 <label for="txtSenha" class="form-label">Senha</label>
                 <asp:TextBox runat="server" TextMode="Password" class="form-control" ID="txtSenha" />
             </div>
-            <asp:Button Text="Cadastrar" id="btnCadastrar" runat="server" class="btn btn-primary w-100" OnClick="btnCadastrar_Click" />
-            <a href="~/Default.aspx" runat="server" visible="false" id="linkLogin">Fazer login</a>
-            <label id="lblMensagem" runat="server"></label>
+
+            <div class="mb-3">
+                <asp:Button Text="Cadastrar" id="btnCadastrar" runat="server" class="btn btn-primary w-100" OnClick="btnCadastrar_Click" />
+            </div>
+
+            <div class="mb-3 text-center">
+                <a href="~/Default.aspx" runat="server" visible="false" id="linkLogin">Fazer login</a>
+            </div>
+            
+            <div class="mb-3 text-center">
+                <label id="lblMensagem" runat="server"></label>
+            </div>
+            
         </div>
     </form>
 

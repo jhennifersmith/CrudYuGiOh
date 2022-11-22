@@ -32,7 +32,7 @@ namespace YuGiOh01.Paginas.Formularios
                 mensagem = "Digite a senha do usuario";
             }
 
-            if(!(mensagem == ""))
+            if(mensagem == "")
             {   
                 Usuario user = new Usuario();
                 user.Login = usuario;

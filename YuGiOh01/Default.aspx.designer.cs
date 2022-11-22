@@ -33,6 +33,15 @@ namespace YuGiOh01
         protected global::System.Web.UI.WebControls.TextBox txtSenha;
 
         /// <summary>
+        /// Controle linkRegistrar.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor linkRegistrar;
+
+        /// <summary>
         /// Controle btnEntrar.
         /// </summary>
         /// <remarks>

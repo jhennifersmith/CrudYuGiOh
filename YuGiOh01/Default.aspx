@@ -17,13 +17,16 @@
                 <h1 class="text-center">Login</h1>
             </div>
             <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Usuário</label>
+                <label for="txtUser" class="form-label">Usuário</label>
                 <asp:TextBox runat="server" class="form-control" ID="txtUser" />
             </div>
 
             <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Senha</label>
-                <asp:TextBox runat="server" class="form-control" ID="txtSenha" />
+                <label for="txtSenha" class="form-label">Senha</label>
+                <asp:TextBox TextMode="Password" runat="server" class="form-control" ID="txtSenha" />
+            </div>
+            <div class="mb-3 text-center">
+                <a href="~/Paginas/Formularios/FrmUsuario.aspx" runat="server" id="linkRegistrar">Registra-se</a>
             </div>
             <asp:Button Text="Entrar" id="btnEntrar" runat="server" class="btn btn-primary w-100" OnClick="btnEntrar_Click" />
         </div>

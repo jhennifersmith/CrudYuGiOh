@@ -4,7 +4,7 @@ namespace YuGiOh01.DAO
 {
     public class UsuarioDAO
     {
-        internal static void CadastrarUsuario(Usuario user)
+        public static void CadastrarUsuario(Usuario user)
         {
 			try
 			{
