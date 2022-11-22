@@ -5,16 +5,16 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="1dc6200b45214ec3baf8241494f57a9f" Name="Diagram1" ZoomLevel="50">
-        <EntityTypeShape EntityType="YuGiOhBDModel.Armadilha" Width="1.5" PointX="11.625" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="YuGiOhBDModel.Armadilha" Width="1.5" PointX="8.75" PointY="10.375" IsExpanded="true" />
         <EntityTypeShape EntityType="YuGiOhBDModel.Atributo" Width="1.5" PointX="1.5" PointY="6.5" IsExpanded="true" />
         <EntityTypeShape EntityType="YuGiOhBDModel.Carta" Width="1.5" PointX="6" PointY="5.625" IsExpanded="true" />
         <EntityTypeShape EntityType="YuGiOhBDModel.Icone" Width="1.5" PointX="11.125" PointY="6.625" IsExpanded="true" />
         <EntityTypeShape EntityType="YuGiOhBDModel.LogUsuario" Width="1.5" PointX="8" PointY="1.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="YuGiOhBDModel.Magia" Width="1.5" PointX="3" PointY="10.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="YuGiOhBDModel.Monstro" Width="1.5" PointX="6.75" PointY="13.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="YuGiOhBDModel.MonstroPendulo" Width="1.5" PointX="9.875" PointY="16" IsExpanded="true" />
-        <EntityTypeShape EntityType="YuGiOhBDModel.TipoCarta" Width="1.5" PointX="6.875" PointY="9.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="YuGiOhBDModel.TipoMonstroEfeito" Width="1.5" PointX="6.625" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="YuGiOhBDModel.Magia" Width="1.5" PointX="2.625" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="YuGiOhBDModel.Monstro" Width="1.5" PointX="6.125" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="YuGiOhBDModel.MonstroPendulo" Width="1.5" PointX="8.5" PointY="16" IsExpanded="true" />
+        <EntityTypeShape EntityType="YuGiOhBDModel.TipoCarta" Width="1.5" PointX="6.125" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="YuGiOhBDModel.TipoMonstroEfeito" Width="1.5" PointX="6" PointY="15.875" IsExpanded="true" />
         <EntityTypeShape EntityType="YuGiOhBDModel.Usuario" Width="1.5" PointX="5.75" PointY="1.375" IsExpanded="true" />
         <AssociationConnector Association="YuGiOhBDModel.FKCARTAIDCARTA" ManuallyRouted="false" />
         <AssociationConnector Association="YuGiOhBDModel.FK_Carta_Atributo" ManuallyRouted="false" />

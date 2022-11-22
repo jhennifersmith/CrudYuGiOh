@@ -13,5 +13,10 @@ namespace YuGiOh01
         {
 
         }
+
+        protected void btnEntrar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

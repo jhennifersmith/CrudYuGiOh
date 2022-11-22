@@ -80,14 +80,30 @@
       <DependentUpon>YuGiOhBD.mdf</DependentUpon>
     </Content>
     <Content Include="Default.aspx" />
+    <Content Include="Paginas\Formularios\FrmUsuario.aspx" />
     <Content Include="Paginas\Home.aspx" />
     <Content Include="Web.config" />
     <Content Include="YuGiOhEntity.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>YuGiOhEntity.Context.cs</LastGenOutput>
+      <DependentUpon>YuGiOhEntity.edmx</DependentUpon>
+    </Content>
+    <Content Include="YuGiOhEntity.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>YuGiOhEntity.edmx</DependentUpon>
+      <LastGenOutput>YuGiOhEntity.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Armadilha.cs">
+      <DependentUpon>YuGiOhEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Atributo.cs">
+      <DependentUpon>YuGiOhEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Carta.cs">
+      <DependentUpon>YuGiOhEntity.tt</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -95,6 +111,29 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Icone.cs">
+      <DependentUpon>YuGiOhEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LogUsuario.cs">
+      <DependentUpon>YuGiOhEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Magia.cs">
+      <DependentUpon>YuGiOhEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Monstro.cs">
+      <DependentUpon>YuGiOhEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MonstroPendulo.cs">
+      <DependentUpon>YuGiOhEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Formularios\FrmUsuario.aspx.cs">
+      <DependentUpon>FrmUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Formularios\FrmUsuario.aspx.designer.cs">
+      <DependentUpon>FrmUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DAO\UsuarioDAO.cs" />
     <Compile Include="Paginas\Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -103,10 +142,24 @@
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TipoCarta.cs">
+      <DependentUpon>YuGiOhEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TipoMonstroEfeito.cs">
+      <DependentUpon>YuGiOhEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario.cs">
+      <DependentUpon>YuGiOhEntity.tt</DependentUpon>
+    </Compile>
     <Compile Include="YuGiOhEntity.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>YuGiOhEntity.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="YuGiOhEntity.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>YuGiOhEntity.tt</DependentUpon>
     </Compile>
     <Compile Include="YuGiOhEntity.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -126,13 +179,11 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>YuGiOhEntity.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="YuGiOhEntity.edmx.diagram">
+    <Content Include="YuGiOhEntity.edmx.diagram">
       <DependentUpon>YuGiOhEntity.edmx</DependentUpon>
-    </None>
+    </Content>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DAO\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>

@@ -12,19 +12,21 @@
 <body>
 
     <form runat="server">
-        <div class="mb-3">
+        <div class="container w-50 mt-4">
+            <div class="mt-4">
+                <h1 class="text-center">Login</h1>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Usuário</label>
+                <asp:TextBox runat="server" class="form-control" ID="txtUser" />
+            </div>
 
-            <label for="exampleInputEmail1" class="form-label">Usuário</label>
-            <asp:TextBox runat="server" class="form-control" />
-            <input type="email"  id="exampleInputEmail1" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Senha</label>
+                <asp:TextBox runat="server" class="form-control" ID="txtSenha" />
+            </div>
+            <asp:Button Text="Entrar" id="btnEntrar" runat="server" class="btn btn-primary w-100" OnClick="btnEntrar_Click" />
         </div>
-
-        <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Senha</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
